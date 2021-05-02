@@ -15,14 +15,11 @@ for (var i = 1; i <= 12; ++i) {
     childdiv.style.left = (x + totalOffset).toString() + "px";
     childdiv.innerHTML = `<img src="img/icons/pic${i}.png">`;
     if (main.className = "div9") {
-        childdiv.innerHTML += "jankooooooooooooooooooooooooooo";
-        main.innerHTML += "OK";
+        childdiv.innerHTML += "text";
     }
-    // childdiv.innerHTML += "jankooooooooooooooooooooooooooo";
-
 
     var p = document.getElementsByClassName("div1");
-    var text = p.innerText += " And this is addonsasdasdasdasdsa.";
+    var text = p.innerText += " And this is addon.";
     gear.appendChild(childdiv);
 }
 
