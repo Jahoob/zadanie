@@ -7,7 +7,7 @@
         <title>Zadanie</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link
-            href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Roboto:wght@300;400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Hind:600|Roboto:400,700&subset=latin-ext"
             rel="stylesheet">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
@@ -25,20 +25,68 @@
                     alt="">
                 <div class="kolo"></div>
             </div>
-
-            <!-- <div class="circle">
-                <a href="">Zarządzanie projektami
-                    <img src="img/icons/pic1.png"
-                        alt="">
-                </a>
-            </div> -->
         </main>
-
-
 
         <footer>
             <h2>Skontaktuj się z nami</h2>
-            <p>Zadzwoń <strong>48 535 015 835</strong> lub wypełnij formularz.</p>
+            <p>Zadzwoń <strong>+48 535 015 835</strong> lub wypełnij formularz.</p>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-column">
+                        <input type="text" class="form-input" placeholder="Imię
+                            i nazwisko">
+                        <input type="text" class="form-input"
+                            placeholder="Firma">
+                    </div>
+                    <div class="form-column">
+                        <input type="text" class="form-input"
+                            placeholder="Telefon">
+                        <select type="text" class="form-input form-select">
+                            <option value="0" selected disabled hidden>Ilość
+                                pracowników</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-column">
+                        <input type="text" class="form-input"
+                            placeholder="E-mail">
+                        <select type="text" class="form-input form-select">
+                            <option value="0" selected disabled hidden>Roczny
+                                dochód firmy</option>
+                            <option value="50000">50000zł</option>
+                            <option value="100000">100000zł</option>
+                            <option value="150000">150000zł</option>
+                            <option value="200000">200000zł</option>
+                            <option value="250000">250000zł</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <textarea class="form-input form-textarea"
+                            placeholder="Wiadomość"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-rules">
+                    <input type="checkbox" id="check"
+                        class="form__checkbox">
+                    <label for="check" class="form__label-rules">Zapozanałem(-łam)
+                        się z <a href="#polityka-prywatnosci"
+                            class="form__label-rules-link">Polityką
+                            prywatności</a>
+                        oraz z <a href="" class="form__label-rules-link">Zastrzeżeniami
+                            prawnymi</a></label>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="form-button">Wyślij</button>
+                </div>
+
+            </form>
         </footer>
         <script src="script.js"></script>
     </body>
