@@ -1,0 +1,129 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding-top: 40px;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 14px;
+            padding-bottom: 45px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        & form .form-column:nth-of-type(1),
+        & form .form-column:nth-of-type(2),
+        & form .form-column:nth-of-type(3) {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+
+            input, select {
+                width: 100%;
+            }
+        }
+
+        & form .form-row {
+            flex-direction: column;
+        }
+
+        & form .form-input {
+            padding: 8px;
+            height: 40px;
+            margin: 10px;
+        }
+
+        & form .form-textarea {
+            width: 100%;
+        }
+
+        & form .form-button {
+            padding: 10px 30px;
+            margin-bottom: 40px;
+        }
+
+        & form .form-rules {
+            max-width: 80%;
+            margin-bottom: 28px;
+
+            & input[type=checkbox] {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding-top: 20px;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+            padding-bottom: 30px;
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        & form .form-column:nth-of-type(1),
+        & form .form-column:nth-of-type(2),
+        & form .form-column:nth-of-type(3) {
+            flex-direction: column;
+            max-width: 80%;
+        }
+
+        & form .form-input {
+            padding: 5px;
+            height: 30px;
+            margin: 8px;
+        }
+
+        & form .form-button {
+            padding: 8px 20px;
+            margin-bottom: 30px;
+        }
+
+        & form .form-rules {
+            max-width: 70%;
+            align-items: flex-start;
+            margin-bottom: 20px;
+
+            & input[type=checkbox] {
+                margin-right: 2px;
+            }
+        }
+    }
+}
